@@ -1,3 +1,14 @@
+#' NIFU-palett for ggplot2-grafer
+#'
+#' @param palette Type palett
+#' @param alpha Transparens, en verdi mellom 0 og 1
+#'
+#' @export nifu_pal
+#' @importFrom grDevices rgb
+#'
+#' @examples
+#' library(scales)
+#' show_col(nifu_pal("default")(6))
 nifu_pal <- function(palette = c("default"), alpha = 1){
   palette <- match.arg(palette)
   
@@ -20,14 +31,29 @@ nifu_pal <- function(palette = c("default"), alpha = 1){
 }
 
 
+#' NIFU-farger for omriss
+#'
+#' @inheritParams nifu_pal 
+#' @param ... Ekstra parametre for ggplot2::discrete_scale()
+#'
+#' @export scale_colour_nifu
+#' @rdname scale_nifu
+#' 
+#' @importFrom ggplot2 discrete_scale
+#'
 scale_colour_nifu <- function(palette = c("default"), alpha = 1, ...){
   palette <- match.arg(palette)
   ggplot2::discrete_scale("colour", "nifu", nifu_pal(palette, alpha), ...)
 }
 
+#' @export scale_color_nifu
+#' @rdname scale_nifu
 scale_color_nifu <- scale_colour_nifu
 
+#' @export scale_fill_nifu
+#' @importFrom ggplot2 discrete_scale
+#' @rdname scale_nifu
 scale_fill_nifu <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "nifu", nifu_pal(palette, alpha), ...)
+  ggplot2::discrete_scale("fill", "nifu", nifu_pal(palette, alpha), ...)
 }

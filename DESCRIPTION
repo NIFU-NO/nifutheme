@@ -6,7 +6,11 @@ Authors@R:
            comment = c(ORCID = "0000-0002-9942-4326"))
 Description: nifutheme inneholder fargepalett for grafer etter NIFUs stilveiledning, 
               og funksjoner for bruk av denne med ggplot2.
-License: GPL 3.0
+License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
+Imports: 
+    ggplot2,
+    scales,
+    testthat
