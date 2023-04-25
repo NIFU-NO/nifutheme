@@ -1,17 +1,28 @@
+---
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
 
 # nifutheme
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-NIFU-farger og -tema for R.
+NIFU-farger og -tema for R. 
 
 ## Installasjon
 
 Installer pakken med:
 
-``` r
+```{r, eval = FALSE, echo = TRUE}
 # install.packages(remotes)  ## Kjør denne om du ikke har remotes-pakken allerede
 
 remotes::install_github("NIFU-NO/nifutheme")
 ```
+
