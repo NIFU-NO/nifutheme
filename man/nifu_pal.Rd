@@ -2,19 +2,17 @@
 % Please edit documentation in R/nifu_pal.R
 \name{nifu_pal}
 \alias{nifu_pal}
-\title{NIFU-palett for ggplot2-grafer}
+\title{Create a color palette in NIFU colours}
 \usage{
-nifu_pal(palette = c("default"), alpha = 1)
+nifu_pal(palette = "main", reverse = FALSE, ...)
 }
 \arguments{
-\item{palette}{Type palett}
+\item{palette}{Type of palette}
 
-\item{alpha}{Transparens, en verdi mellom 0 og 1}
+\item{reverse}{Specify direction of colour palette}
+
+\item{...}{Additional arguments to colorRampPalette}
 }
 \description{
-NIFU-palett for ggplot2-grafer
-}
-\examples{
-library(scales)
-show_col(nifu_pal("default")(6))
+Create a color palette in NIFU colours
 }
