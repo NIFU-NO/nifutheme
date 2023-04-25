@@ -1,6 +1,7 @@
 #' Specify NIFU colours
 #'
-#' @param type Type of palette, defaulting to a discrete colour palette
+#' @param type Type of palette, defaulting to a discrete colour palette. 
+#'              Possible types are c("main", "reds", "blues")
 #' @param ... Additional arguments passed to ggplot2
 #'
 #' @export nifu_cols
@@ -108,7 +109,6 @@ scale_colour_nifu <- function(palette = "main",
 
 #' @inheritParams scale_colour_nifu
 #' @export scale_color_nifu
-#' @rdname scale_nifu
 scale_color_nifu <- scale_colour_nifu
 
 

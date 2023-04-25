@@ -7,7 +7,8 @@
 nifu_cols(type = "main", ...)
 }
 \arguments{
-\item{type}{Type of palette, defaulting to a discrete colour palette}
+\item{type}{Type of palette, defaulting to a discrete colour palette.
+Possible types are c("main", "reds", "blues")}
 
 \item{...}{Additional arguments passed to ggplot2}
 }
