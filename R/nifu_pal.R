@@ -3,6 +3,8 @@
 #' @param type Type of palette, defaulting to a discrete colour palette
 #' @param ... Additional arguments passed to ggplot2
 #'
+#' @export nifu_cols
+#'
 
 nifu_cols <- function(type = "main", ...){
   
@@ -78,6 +80,7 @@ nifu_pal <- function(palette = "main",
 #'            ggplot2::scale_colour_gradientn(), respectively
 #' 
 #' @importFrom ggplot2 discrete_scale
+#' @export scale_colour_nifu
 #'
 scale_colour_nifu <- function(palette = "main", 
                               discrete = TRUE, 
