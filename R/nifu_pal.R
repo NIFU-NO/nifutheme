@@ -18,11 +18,11 @@ nifu_cols <- function(type = "main", ...){
   if(type == "main"){
     cols_used <- c(
       "#C84957",
-      "#A6A6A6",
-      "#2D8E9F",
+      "#404040",
       "#EDE2D2",
-      "#DBD2E0",
-      "#E8AE59")
+      "#E8AE59",
+      "#2D8E9F",
+      "#DBD2E0")
   } else if (type == "reds"){
     cols_used <- c(
       "#E8B0B7",
