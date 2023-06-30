@@ -4,8 +4,8 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Henrik", "Karlstrøm", , "henrik.karlstrom@nifu.no", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0002-9942-4326"))
-Description: Contains colour pallettes for graphs following NIFU style guides
-License: GPL (>= 3) + file LICENSE
+Description: Contains colour pallettes for graphs following NIFU style guides.
+License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
