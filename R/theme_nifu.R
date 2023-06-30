@@ -6,6 +6,7 @@
 #' @param base_rect_size set base rectangle size
 #' @param ... additional parameters passed to scale_*_nifu()
 #'
+#' @importFrom ggplot2 %+replace%
 #' @export
 #'
 
@@ -25,7 +26,7 @@ theme_nifu <- function(base_size = 16,
   ) %+replace%
     ggplot2::theme(
       axis.ticks      = ggplot2::element_blank(),
-      axis.text = ggplot2::element_text(size = rel(1.4)),
+      axis.text = ggplot2::element_text(size = ggplot2::rel(1.4)),
       axis.title.x = ggplot2::element_text(size = ggplot2::rel(1.8),
                                            margin = ggplot2::margin(10, 0, 0, 0),
                                            hjust = 1),
