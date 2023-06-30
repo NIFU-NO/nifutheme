@@ -107,6 +107,8 @@ scale_colour_nifu <- function(palette = "main",
   
 }
 
+#' Alias for scale_colour_nifu()
+#' 
 #' @inheritParams scale_colour_nifu
 #' @export scale_color_nifu
 scale_color_nifu <- scale_colour_nifu
