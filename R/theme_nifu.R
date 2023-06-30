@@ -9,11 +9,12 @@
 #' @importFrom ggplot2 %+replace%
 #' @export
 #'
-#' @examples
-#' iris |> 
-#'  ggplot2::ggplot(ggplot2::aes(Sepal.Length, Sepal.Width, color = Species)) + 
-#'  ggplot2::geom_point() + 
-#'  theme_nifu()
+#' @examples \dontrun{
+#' library(ggplot2)
+#' ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + 
+#'   geom_point() + 
+#'   theme_nifu()
+#' }
 #' 
 #' @returns styling for ggplot plot objects
 
