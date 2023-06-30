@@ -9,6 +9,13 @@
 #' @importFrom ggplot2 %+replace%
 #' @export
 #'
+#' @examples
+#' iris |> 
+#'  ggplot(aes(Sepal.Length, Sepal.Width, color = Species)) + 
+#'  geom_point() + 
+#'  theme_nifu()
+#' 
+#' @returns styling for ggplot plot objects
 
 theme_nifu <- function(base_size = 16,
                        base_family = "",

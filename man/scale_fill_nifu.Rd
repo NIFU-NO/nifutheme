@@ -16,6 +16,17 @@ scale_fill_nifu(palette = "main", discrete = TRUE, reverse = FALSE, ...)
 \item{...}{Ekstra parametre for ggplot2::discrete_scale() or
 ggplot2::scale_colour_gradientn(), respectively}
 }
+\value{
+ggproto object for fill aesthetics
+}
 \description{
 NIFU fill scale
+}
+\examples{
+iris |> 
+ ggplot(aes(Sepal.Length, Sepal.Width, fill = Species)) + 
+ geom_col() +
+ scale_fill_nifu()
+
+
 }

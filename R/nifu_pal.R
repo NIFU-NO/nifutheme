@@ -6,6 +6,10 @@
 #'
 #' @export nifu_cols
 #'
+#' @examples
+#' nifu_cols()
+#' 
+#' @returns vector of hex codes for use in colour and fill aesthetics
 
 nifu_cols <- function(type = "main", ...){
   
@@ -83,6 +87,14 @@ nifu_pal <- function(palette = "main",
 #' @importFrom ggplot2 discrete_scale
 #' @export scale_colour_nifu
 #'
+#' @examples
+#' iris |> 
+#'  ggplot(aes(Sepal.Length, Sepal.Width, color = Species)) + 
+#'  geom_point() +
+#'  scale_colour_nifu()
+#'
+#' @returns ggproto object for color aesthetic
+#'
 scale_colour_nifu <- function(palette = "main", 
                               discrete = TRUE, 
                               reverse = FALSE,
@@ -120,6 +132,15 @@ scale_color_nifu <- scale_colour_nifu
 #' @inheritParams scale_colour_nifu
 #' @export scale_fill_nifu
 #' @importFrom ggplot2 discrete_scale
+#' 
+#' @returns ggproto object for fill aesthetics
+#' 
+#' @examples
+#' iris |> 
+#'  ggplot(aes(Sepal.Length, Sepal.Width, fill = Species)) + 
+#'  geom_col() +
+#'  scale_fill_nifu()
+#' 
 #' 
 scale_fill_nifu <- function(palette = "main", 
                               discrete = TRUE, 

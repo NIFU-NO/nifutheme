@@ -12,6 +12,13 @@ Possible types are c("main", "reds", "blues")}
 
 \item{...}{Additional arguments passed to ggplot2}
 }
+\value{
+vector of hex codes for use in colour and fill aesthetics
+}
 \description{
 Specify NIFU colours
+}
+\examples{
+nifu_cols()
+
 }

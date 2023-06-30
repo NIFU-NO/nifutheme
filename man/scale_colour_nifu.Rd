@@ -16,6 +16,16 @@ scale_colour_nifu(palette = "main", discrete = TRUE, reverse = FALSE, ...)
 \item{...}{Ekstra parametre for ggplot2::discrete_scale() or
 ggplot2::scale_colour_gradientn(), respectively}
 }
+\value{
+ggproto object for color aesthetic
+}
 \description{
 NIFU colour scale
+}
+\examples{
+iris |> 
+ ggplot(aes(Sepal.Length, Sepal.Width, color = Species)) + 
+ geom_point() +
+ scale_colour_nifu()
+
 }

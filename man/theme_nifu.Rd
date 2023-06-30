@@ -23,6 +23,16 @@ theme_nifu(
 
 \item{...}{additional parameters passed to scale_*_nifu()}
 }
+\value{
+styling for ggplot plot objects
+}
 \description{
 Plot theme for NIFU graphs
+}
+\examples{
+iris |> 
+ ggplot(aes(Sepal.Length, Sepal.Width, color = Species)) + 
+ geom_point() + 
+ theme_nifu()
+
 }
