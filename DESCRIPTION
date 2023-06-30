@@ -1,10 +1,10 @@
 Package: nifutheme
-Title: NIFU-farger og tema for R
+Title: NIFU-tema for R
 Version: 0.0.0.9000
 Authors@R: 
     person("Henrik", "Karlstrøm", , "henrik.karlstrom@nifu.no", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0002-9942-4326"))
-Description: nifutheme inneholder fargepalett for grafer etter NIFUs stilveiledning, 
+Description: inneholder fargepalett for grafer etter NIFUs stilveiledning, 
               og funksjoner for bruk av denne med ggplot2.
 License: GPL (>= 3) + file LICENSE
 Encoding: UTF-8

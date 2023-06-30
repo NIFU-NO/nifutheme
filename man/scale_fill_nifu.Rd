@@ -24,8 +24,8 @@ NIFU fill scale
 }
 \examples{
 iris |> 
- ggplot(aes(Sepal.Length, Sepal.Width, fill = Species)) + 
- geom_col() +
+ ggplot2::ggplot(ggplot2::aes(Sepal.Length, Sepal.Width, fill = Species)) + 
+ ggplot2::geom_col() +
  scale_fill_nifu()
 
 

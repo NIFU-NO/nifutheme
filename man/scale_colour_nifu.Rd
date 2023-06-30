@@ -24,8 +24,8 @@ NIFU colour scale
 }
 \examples{
 iris |> 
- ggplot(aes(Sepal.Length, Sepal.Width, color = Species)) + 
- geom_point() +
+ ggplot2::ggplot(ggplot2::aes(Sepal.Length, Sepal.Width, color = Species)) + 
+ ggplot2::geom_point() +
  scale_colour_nifu()
 
 }
