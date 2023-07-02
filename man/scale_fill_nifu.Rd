@@ -23,10 +23,8 @@ ggproto object for fill aesthetics
 NIFU fill scale
 }
 \examples{
-\dontrun{
 ggplot(iris, aes(Sepal.Length, Sepal.Width, fill = Species)) +
   geom_col() +
   scale_fill_nifu() 
-}
 
 }

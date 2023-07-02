@@ -23,10 +23,9 @@ ggproto object for color aesthetic
 NIFU colour scale
 }
 \examples{
-\dontrun{
 ggplot(iris, aes(Sepal.Length, Sepal.Width, fill = Species)) +
   geom_point() +
   scale_color_nifu() 
-}
+
 
 }

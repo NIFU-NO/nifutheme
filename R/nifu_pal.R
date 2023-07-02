@@ -87,11 +87,11 @@ nifu_pal <- function(palette = "main",
 #' @importFrom ggplot2 discrete_scale
 #' @export scale_colour_nifu
 #'
-#' @examples \dontrun{
+#' @examples 
 #' ggplot(iris, aes(Sepal.Length, Sepal.Width, fill = Species)) +
 #'   geom_point() +
 #'   scale_color_nifu() 
-#' }
+#' 
 #'
 #' @returns ggproto object for color aesthetic
 #'
@@ -123,6 +123,8 @@ scale_colour_nifu <- function(palette = "main",
 #' 
 #' @inheritParams scale_colour_nifu
 #' @export scale_color_nifu
+#' @returns ggproto object for colour aesthetic
+#'
 scale_color_nifu <- scale_colour_nifu
 
 
@@ -135,11 +137,10 @@ scale_color_nifu <- scale_colour_nifu
 #' 
 #' @returns ggproto object for fill aesthetics
 #' 
-#' @examples \dontrun{
+#' @examples
 #' ggplot(iris, aes(Sepal.Length, Sepal.Width, fill = Species)) +
 #'   geom_col() +
 #'   scale_fill_nifu() 
-#' }
 #' 
 scale_fill_nifu <- function(palette = "main", 
                               discrete = TRUE, 
