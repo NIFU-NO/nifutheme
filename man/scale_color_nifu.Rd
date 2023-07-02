@@ -16,6 +16,9 @@ scale_color_nifu(palette = "main", discrete = TRUE, reverse = FALSE, ...)
 \item{...}{Ekstra parametre for ggplot2::discrete_scale() or
 ggplot2::scale_colour_gradientn(), respectively}
 }
+\value{
+ggproto object for colour aesthetic
+}
 \description{
 Alias for scale_colour_nifu()
 }

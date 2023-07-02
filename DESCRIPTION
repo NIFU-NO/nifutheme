@@ -1,5 +1,5 @@
 Package: nifutheme
-Title: NIFU Themes for R
+Title: NIFU Themes
 Version: 1.0.0
 Authors@R: 
     person("Henrik", "Karlstrøm", , "henrik.karlstrom@nifu.no", role = c("aut", "cre", "cph"),
