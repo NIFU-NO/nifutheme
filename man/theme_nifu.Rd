@@ -30,11 +30,9 @@ styling for ggplot plot objects
 Plot theme for NIFU graphs
 }
 \examples{
-\dontrun{
 library(ggplot2)
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + 
   geom_point() + 
   theme_nifu()
-}
 
 }
