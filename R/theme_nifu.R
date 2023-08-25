@@ -4,9 +4,8 @@
 #' @param base_family set base font family
 #' @param base_line_size set base line size
 #' @param base_rect_size set base rectangle size
-#' @param ... additional parameters passed to scale_*_nifu()
 #'
-#' @importFrom ggplot2 %+replace%
+#' @importFrom ggplot2 `%+replace%`
 #' @export
 #'
 #' @examples 
@@ -20,18 +19,20 @@
 theme_nifu <- function(base_size = 16,
                        base_family = "",
                        base_line_size = base_size / 22,
-                       base_rect_size = base_size / 22,
-                       ...){
+                       base_rect_size = base_size / 22){
   
   half_line <- base_size / 2
+  extrafont::font_import(prompt = FALSE, pattern = "[Cc]alibri\\.ttf")
+  extrafont::loadfonts(quiet = TRUE)
   
-  t <- ggplot2::theme_grey(
+  t <- ggplot2::`%+replace%`(ggplot2::theme_grey(
     base_size = base_size,
     base_family = base_family,
     base_line_size = base_line_size,
     base_rect_size = base_rect_size
-  ) %+replace%
+  ),
     ggplot2::theme(
+      line = ggplot2::element_line(),
       axis.ticks      = ggplot2::element_blank(),
       axis.text = ggplot2::element_text(size = ggplot2::rel(1.4)),
       axis.title.x = ggplot2::element_text(size = ggplot2::rel(1.8),
@@ -59,17 +60,43 @@ theme_nifu <- function(base_size = 16,
       
       legend.position = "bottom",
       
+      
       text = ggplot2::element_text(family = "Calibri"),
       
       complete = TRUE
     )
+  )
   
+
   
+}
+
+#' Title
+#'
+#' @inheritParams theme_nifu
+#' @inheritParams scale_colour_nifu
+#' @param ... additional parameters passed to scale_*_nifu()
+#'
+#' @return List
+#' @export
+#'
+#' @examples
+#' library(ggplot2)
+#' ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + 
+#'   geom_point() + 
+#'   theme_nifu()
+nifu_theme <- function(base_size = 16,
+                       base_family = "",
+                       base_line_size = base_size / 22,
+                       base_rect_size = base_size / 22,
+                       ...) {
   list(
-    t,
+    theme_nifu(base_size = base_size,
+               base_family = base_family,
+               base_line_size = base_line_size,
+               base_rect_size = base_rect_size),
     scale_fill_nifu(...),
     scale_color_nifu(...),
     ggplot2::coord_cartesian(clip = "off")
   )
-  
 }
