@@ -1,0 +1,46 @@
+% Plasser pakker og macrodefinisjoner i denne filen
+% slik at preambelet holdes rent.
+
+
+\ProvidesPackage{stil}
+
+
+%%%%%%%%%%%%% Bibliografi %%%%%%%%%%%%%%
+%                                      %
+%  Kompileringssekvens:                %
+%  pdflatex -> biber -> pdflatex       %
+%                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage[backend      = biber,
+                sortcites    = true,
+                giveninits   = true,
+                uniquename   = init,
+                doi          = false,
+                isbn         = false,
+                url          = false,
+                maxcitenames = 2,
+                style        = authoryear]{biblatex}
+\renewcommand*{\nameyeardelim}{\addcomma\space}
+\DeclareNameAlias{sortname}{family-given}
+\DeclareNameAlias{default}{family-given}
+\DeclareFieldFormat[article]{volume}{\bibstring{jourvol}\addnbspace#1}
+\DeclareFieldFormat[article]{number}{\bibstring{number}\addnbspace#1}
+\renewbibmacro*{volume+number+eid}
+{
+    \printfield{volume}
+    \setunit{\addcomma\space}
+    \printfield{number}
+    \setunit{\addcomma\space}
+    \printfield{eid}
+}
+
+%\addbibresource{bibliografi.bib}
+
+%%%%%%%%%%%%% Pakker    %%%%%%%%%%%%%%
+%                                      %
+%  Lagt til av Siv-Elisabeth           %
+%  								      %
+%                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\endinput

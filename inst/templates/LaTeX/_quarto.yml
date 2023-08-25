@@ -1,0 +1,33 @@
+title: "Ny rapport"
+subtitle: "Ny undertittel"
+author: 
+  - "Stephan Daus"
+  - "Hsin Chen"
+  - "Mahatma Ghandi"
+params:
+  projectnumber: "212345"
+  reportnumber: "2023:2"
+  isbn: "978-82-327-0000-0"
+  projectowner: "Utdanningsdirektoratet"
+  projectowneraddress: "Postboks 9359, Grønland, 0135 Oslo"
+  topImagePath: "../NIFU_graphic/cover_ovre.png"
+  prefacetext: |
+    Denne rapporten er utarbeidet på oppdrag fra Kompetansebehovsutvalget. Den inngår som en del av kunnskapsgrunnlaget for Kompetansebehovsutvalgets arbeid med kompetansebehov og grønn omstilling. Arbeidet er gjennomført av NIFU-forskerne Håkon Endresen Normann, Antje Klitkou, Lone Wanderås Fossum, Pål Børing og Espen Solberg, med førstnevnte som prosjektleder, og SINTEF Digital-forskerne Markus Steen, Tuukka Mäkitie, Henrik Brynthe Lund og Mari Wardeberg. 
+    Rapporten bygger på en litteraturgjennomgang, dokumentanalyser, intervjuer, spørreundersøkelse og registerdata. Vi vil takke de som deltok på intervjuer og spørreundersøkelse.
+    Vi takker Kompetansebehovsutvalget for et meget interessant oppdrag. Vi vil også takke Direktoratet for høyere utdanning og kompetanse (HK-dir), ved sekretariat for Kompetansebehovsutvalget, for konstruktiv dialog og nyttige innspill i forbindelse med arbeidet. Vi håper at rapporten kan bidra til kunnskapsbasert debatt om temaet og til Kompetansebehovsutvalgets arbeid med en egen hovedrapport om kompetansebehov og grønn omstilling.
+  prefaceAuthorA: "Vibeke Opheim"
+  prefaceAuthorAposition: "Direktør"
+  prefaceAuthorB: "Cay Gjerustad"
+  prefaceAuthorBposition: "Forskningsleder"
+format:
+  pdf:
+    latex-auto-install: true
+    latex-auto-mk: true
+    documentclass: "C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/LaTeX/nifu"
+    classoption: [norsk, report] # alternativt [english, WorkingPaper]
+    pdf-engine: pdflatex # raskere enn default
+    include-in-header:
+      - file: "C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/LaTeX/NIFU_preamble.tex"
+    toc: false
+    number-sections: true
+    shift-heading-level-by: -1

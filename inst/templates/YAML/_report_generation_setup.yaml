@@ -1,0 +1,186 @@
+label_separator: ' - '
+name_separator: ~
+mesos_report: false
+mesos_var: ~
+report_yaml_file: 'C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/YAML/_metadata.yaml'
+chapter_yaml_file: 'C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/YAML/kapittel_hode.yaml'
+qmd_start_section_filepath: 'C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/QMD/_nifu_qmd_start_section.qmd'
+qmd_end_section_filepath: 'C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/QMD/_nifu_qmd_end_section.qmd'
+index_filename: index.qmd
+element_names:
+ - uni_cat_prop_plot
+ - hline
+ - uni_cat_table
+ # - uni_chr_table
+ # - uni_cat_freq_plot
+ # - uni_sigtest
+ # - uni_cat_text
+ # - bi_catcat_prop_plot
+ # - bi_catcat_freq_plot
+ # - bi_catcat_prop_plot2
+ # - bi_catcat_freq_plot2
+ # - bi_catcat_table
+ # - bi_sigtest
+group_by:
+ - chapter
+ - .variable_label_prefix
+ - .element_name
+sort_by: .upper
+data_label: 'percentage_bare'
+always_show_bi_for_by:
+- resp
+categories_treated_as_na:
+- 'Benyttes ikke'
+- 'Vet ikke'
+- 'Usikker'
+- 'Har ikke brukt støtteressursen'
+- 'Ikke hatt'
+variables_always_at_top: ~
+variables_always_at_bottom:
+#- s_324_7
+#- s_403_1
+#- s_501_7
+#- s_502_9
+#- s_507_10
+#- s_508_8
+#- s_509_6
+#- s_606_1
+panel_tabset_mesos: true
+showNA: 'never'
+totals: true
+hide_label_if_prop_below: .01
+hide_bi_entry_if_sig_above: 0.07
+hide_test_if_n_below: 10
+hide_chr_for_others: true
+label_font_size: 8.0
+main_font_size: 8.0
+x_axis_label_width: 25.0
+
+plot_height_multiplier: .15
+plot_height_fixed_constant: 1.2
+plot_height_max: 18
+plot_height_min: 1
+png_height: 16
+png_scale: 1.2
+png_width: 16
+vertical_height: 12
+max_width_file: 64
+max_width_obj: 100
+font_family: sans
+open_after_drafting: false
+vertical: false
+mesos_first: true
+single_y_bivariate_elements: true
+descend: true
+require_common_categories: true
+colour_palette:
+- '#C84957'
+- '#363636'
+- '#EDE2D2'
+- '#2D8E9F'
+- '#DBD2E0'
+- '#E8AE59'
+- '#E8B0B7'
+- '#90D4E0'
+- '#7E2630'
+- '#1B555F'
+colour_na: '#A6A6A6'
+colour_2nd_binary_cat: ~ #'#ffffff'
+digits: 0
+data_label_decimal_symbol: ','
+reps: 100.0
+information:
+- '.variable_label'
+- '.category'
+- '.proportion'
+flexi: true
+return_raw: true
+contents:
+- 'intro'
+- 'not_used_category'
+- 'mode_max'
+- 'value_max'
+- 'value_min'
+- 'value_diff'
+- 'mean_max'
+- 'mean_min'
+- 'mean_diff'
+- 'median_max'
+- 'median_min'
+- 'median_diff'
+- 'variance_max'
+- 'variance_min'
+include_numbers: true
+n_top_bottom: 1.0
+translations:
+    - last_sep: ' og '
+    - intro_prefix: 'Vi vil nå se på spørsmålet '
+    - intro_suffix: ''
+    - mode_max_onfix: ' på '
+    - mode_max_prefix: 'De mest vanlige svarene var '
+    - mode_max_suffix: ''
+    - not_used_prefix: 'Følgende svarkategorier ble ikke brukt: '
+    - not_used_suffix: ''
+    - value_max_prefix: ''
+    - value_max_infix: ' er {?det/de} {dots$n_top_bottom} spørsmåle{?t/ne} hvor flest har svart '
+    - value_max_suffix: ''
+    - value_min_prefix: ''
+    - value_min_infix: ' er {?det/de} {dots$n_top_bottom} spørsmåle{?t/ne} hvor færrest har svart '
+    - value_min_suffix: ''
+    - mean_onfix: 'M = '
+    - mean_max_prefix: 'De har høyest snitt på '
+    - mean_max_suffix: ''
+    - mean_min_prefix: 'De har lavest snitt på '
+    - mean_min_suffix: ''
+    - median_onfix: 'Median = '
+    - median_max_prefix: 'De har høyest median på '
+    - median_max_suffix: ''
+    - median_min_prefix: 'De har lavest snitt på '
+    - median_min_suffix: ''
+    - intro_by_prefix: 'Vi vil nå se på spørsmålet '
+    - intro_by_infix: ' brutt ned på '
+    - intro_by_suffix: ''
+    - by_breakdown: ' etter '
+    - n_equal_prefix: ' (N = '
+    - n_equal_suffix: ')'
+    - table_heading_N: 'Totalt (N)'
+    - by_total: 'Alle'
+    - sigtest_prefix: 'Signifikanstesting av '
+    - sigtest_suffix: ''
+    - mesos_group_prefix: ' For gruppe: '
+    - mesos_group_suffix: ''
+    - mesos_label_all_others: 'Alle andre'
+    - empty_text_chunk: '\nTekst\n'
+    - flexi_input_chapter: 'Kapittel:'
+    - flexi_input_dep: 'Variabler:'
+    - flexi_input_indep: 'Brytes ned på:'
+    - flexi_input_mesos_group: 'Filter (institusjon):'
+    - flexi_figure_type: 'Figurtype:'
+    - flexi_data_label: 'Vist statistikk:'
+    - flexi_showNA: 'Inkluder manglende svar:'
+    - flexi_sort_by: 'Sorter etter:'
+    - flexi_totals: 'Totaler'
+    - flexi_digits: 'Antall desimaler'
+    - flexi_table: 'Tabell'
+    - flexi_figure: 'Figur'
+    - flexi_figure_type_proportion: 'Andel'
+    - flexi_figure_type_frequency: 'Frekvens'
+    - flexi_cols_variable_name: 'Variabelnavn'
+    - flexi_cols_variable_label: 'Variabeletikett'
+    - flexi_cols_category: 'Svarkategori'
+    - flexi_cols_count: 'N'
+    - flexi_cols_count_se: 'SE(N)'
+    - flexi_cols_proportion: 'Andel'
+    - flexi_cols_proportion_se: 'SE(Andel)'
+    - flexi_cols_mean: 'Snitt'
+    - flexi_cols_mean_se: 'SE(Snitt)'
+    - flexi_cols_data_label: 'Valgt sammendrag'
+    - flexi_cols_comb_categories: 'Kombinerte svarkategorier'
+    - flexi_cols_sum_value: 'Sum av vist statistikk på tvers av kombinerte svarkategorier'
+    - flexi_validate: 'Feil: Variablene må ha noen svarkategorier til felles.'
+    - flexi_settings: 'Innstillinger'
+    - flexi_basic_settings: 'Grunnleggende'
+    - flexi_advanced_settings: 'Avansert'
+    - flexi_input_indep_none: "<ingen>"
+    - flexi_hide_label_if_prop_below: 'Skjul etikett hvis andel under:'
+

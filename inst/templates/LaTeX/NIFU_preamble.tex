@@ -1,0 +1,16 @@
+\usepackage{stil}
+
+\title{$title$}
+\subtitle{$subtitle$}
+\author{$for(author)$$author$$sep$ \and $endfor$}
+\report{ {{< meta params.reportnumber >}} }
+\projectno{ {{< meta params.projectnumber >}} }
+\customer{ {{< meta params.projectowner >}} }
+\customeraddress{ {{< meta params.projectowneraddress >}} }
+\ISBN{ {{< meta params.isbn >}} }
+\newcommand{\topImagePath}{ {{< meta params.topImagePath >}} }
+\prefacetext{ {{< meta params.prefacetext >}} }
+\prefaceAuthorA{ {{< meta params.prefaceAuthorA >}} }
+\prefaceAuthorAposition{ {{< meta params.prefaceAuthorAposition >}} }
+\prefaceAuthorB{ {{< meta params.prefaceAuthorB >}} }
+\prefaceAuthorBposition{ {{< meta params.prefaceAuthorBposition >}} }

@@ -1,0 +1,98 @@
+project:
+  type: website # Bytt til book om man vil prøve ut bokformat (eksperimentelt)
+  preview:
+    # port: 3000
+    browser: true
+    host: 127.0.0.1
+    navigate: true
+
+website:
+  navbar:
+    search: true
+  page-navigation: true
+  # page-footer:
+  #   left: "NIFU-ikon"
+  #   center: "NIFU, 2022"
+  reader-mode: true
+
+### Nummerering av overskrifter og innholdsfortegnelse
+number-sections: true
+number-depth: 3
+toc: true
+toc-depth: 4
+
+### Hvordan vise figurer og tabeller, samt figur/tabelltekster
+fig-dpi: 500
+prefer-html: true
+df-print: kable
+lot: true
+lof: true
+crossref:
+ chapters: true
+ fig-title: '**Figur**'
+ tbl-title: '**Tabell**'
+ lof-title: 'Figuroversikt'
+ lot-title: 'Tabelloversikt'
+ title-delim: '**.**'
+ fig-prefix: Figur
+ tbl-prefix: Tabell
+ ref-hyperlink: true
+ labels: arabic
+fig-cap-location: bottom
+tbl-cap-location: top
+
+lang: "nb"
+license: "CC BY 4.0"
+
+
+quarto-required: ">= 1.4.156"
+
+### Bibliografi, samt hvordan sitere rapportene
+csl: "C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/CitationStyles/apa.csl"
+google-scholar: true
+reference-location: margin
+citation-location: margin
+appendex-cite-as: false
+cache.comments: false
+execute:
+  echo: false
+  warning: false
+
+format:
+  html:
+    mainfont: "Calibri"
+    fontsize: "10.5"
+    linestretch: 1.6
+    theme:
+     - yeti
+     - "C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/CSS/styles.scss"
+    css: "C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/CSS/nifustil.css"
+    toc: true
+    comments:
+      hypothesis: true
+    include-after-body:
+      text: |
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll("figcaption").forEach(e => {e.innerHTML = e.innerHTML.replace(/^(Figure&nbsp;\d+)/, "<strong>$1</strong>")})
+          });
+        </script>
+  docx:
+    reference-doc: "C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/DOCX/custom-reference-doc.docx"
+    number-sections: false
+  pdf:
+    latex-auto-install: true
+    latex-auto-mk: true
+    documentclass: "C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/LaTeX/nifu"
+    classoption: [norsk, report]
+    pdf-engine: pdflatex
+    include-in-header:
+      - file: "C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/LaTeX/NIFU_preamble.tex"
+    output-file: "PDF_output/rapport.pdf"
+    colorlinks: true
+    shift-heading-level-by: -1
+    top-level-division: chapter
+    toc: false # Ordnes av NIFUs LaTeX-mal
+    lot: false # Ordnes av NIFUs LaTeX-mal
+    lof: false # Ordnes av NIFUs LaTeX-mal
+
