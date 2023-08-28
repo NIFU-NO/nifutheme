@@ -36,7 +36,7 @@ iris |>
   theme_minimal()
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](man/figures/unnamed-chunk-3-1.png)<!-- -->
 
 And here is the fill aesthetic. Note the arguments that specify
 non-discrete data and a color specification:
@@ -52,7 +52,7 @@ faithfuld |>
   theme_minimal()
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](man/figures/unnamed-chunk-4-1.png)<!-- -->
 
 Here is the fill aesthetic in the blue hues:
 
@@ -67,7 +67,7 @@ faithfuld |>
   theme_minimal()
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](man/figures/unnamed-chunk-5-1.png)<!-- -->
 
 Palettes are reversible:
 
@@ -83,4 +83,4 @@ faithfuld |>
   theme_minimal()
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+![](man/figures/unnamed-chunk-6-1.png)<!-- -->

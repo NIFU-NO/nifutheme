@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: "_site"
+  render:
+    - "main"
+    - "rapporter"
+    # - "tidsserier"
+
+website:
+  title: "Spørsmål til Skole-Norge"
+  navbar:
+    logo: "https://www.nifu.no/wp-content/uploads/logo_hvit.png"
+    left:
+      - file: "main/om_historikk.qmd"
+      - file: "main/om_metode.qmd"
+      - sidebar:rapporter
+      - file: "main/tidligere_rapporter.qmd"
+      # - sidebar:tidsserier
+  sidebar:
+    - id: rapporter
+      title: "Rapporter"
+      contents: "rapporter"
+    # - id: tidsserier
+    #   title: "Tidsserier"
+    #   contents: "tidsserier"
+
+execute:
+  freeze: true
+  cache: true
+
+metadata-files:
+  - _nifu_global.yaml # Must be in same folder/subfolder

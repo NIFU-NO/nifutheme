@@ -1,0 +1,13 @@
+caption, .table-caption {
+  text-align: left;
+  font-weight: bold;
+}
+caption, .figure-caption {
+  text-align: left;
+  text-justify: inter-word;
+  font-weight: bold;
+  color: black;
+}
+p, .justify {
+  text-align: justify
+}

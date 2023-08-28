@@ -1,0 +1,32 @@
+
+
+<!-- {{< includes seksjoner/toc.qmd >}} -->
+<!-- {{< includes seksjoner/sammendrag.qmd >}} -->
+<!-- {{< pagebreak >}} -->
+<!-- {{< includes seksjoner/kap1.qmd >}} -->
+<!-- {{< pagebreak >}} -->
+<!-- {{< includes seksjoner/kap2.qmd >}} -->
+<!-- {{< pagebreak >}}   -->
+<!-- {{< includes seksjoner/lister.qmd >}} -->
+
+<!-- \include{seksjoner/forord} -->
+
+<!-- \tableofcontents* -->
+
+<!-- \include{seksjoner/sammendrag} -->
+<!-- \include{seksjoner/seksjonsinndelinger} -->
+<!-- \include{seksjoner/tabfig} -->
+
+<!-- \backmatter % Ikke-nummererte kapitler -->
+
+<!-- \printbibliography -->
+
+<!-- \appendix -->
+
+<!-- \include{seksjoner/kryssreferanser} -->
+<!-- \include{seksjoner/lister} -->
+
+<!-- \clearpage -->
+<!-- \listoftables -->
+<!-- \clearpage -->
+<!-- \listoffigures -->
