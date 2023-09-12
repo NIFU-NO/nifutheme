@@ -5,6 +5,12 @@ project:
     browser: true
     host: 127.0.0.1
     navigate: true
+#  post-render: 
+
+execute:
+  echo: false
+  warning: false
+  execute-dir: project
 
 website:
   navbar:
@@ -44,19 +50,15 @@ tbl-cap-location: top
 lang: "nb"
 license: "CC BY 4.0"
 
-
 quarto-required: ">= 1.4.156"
 
 ### Bibliografi, samt hvordan sitere rapportene
-csl: "C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/CitationStyles/apa.csl"
+csl: "../Z_Resources/CitationStyles/nifu.csl"
 google-scholar: true
 reference-location: margin
 citation-location: margin
 appendex-cite-as: false
 cache.comments: false
-execute:
-  echo: false
-  warning: false
 
 format:
   html:
@@ -65,8 +67,8 @@ format:
     linestretch: 1.6
     theme:
      - yeti
-     - "C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/CSS/styles.scss"
-    css: "C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/CSS/nifustil.css"
+     - "../Z_Resources/CSS/nifu.scss"
+    css: "../Z_Resources/CSS/nifu.css"
     toc: true
     comments:
       hypothesis: true
@@ -78,17 +80,17 @@ format:
           });
         </script>
   docx:
-    reference-doc: "C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/DOCX/custom-reference-doc.docx"
+    reference-doc: "../Z_Resources/DOCX/nifu.docx"
     number-sections: false
   pdf:
     latex-auto-install: true
     latex-auto-mk: true
-    documentclass: "C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/LaTeX/nifu"
+    documentclass: "../Z_Resources/LaTeX/nifu"
     classoption: [norsk, report]
     pdf-engine: pdflatex
     include-in-header:
-      - file: "C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/LaTeX/NIFU_preamble.tex"
-    output-file: "PDF_output/rapport.pdf"
+      - file: "../Z_Resources/LaTeX/NIFU_preamble.tex"
+    output-file: "PDF/Rapport.pdf"
     colorlinks: true
     shift-heading-level-by: -1
     top-level-division: chapter

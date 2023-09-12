@@ -2,10 +2,10 @@ label_separator: ' - '
 name_separator: ~
 mesos_report: false
 mesos_var: ~
-report_yaml_file: 'C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/YAML/_metadata.yaml'
-chapter_yaml_file: 'C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/YAML/kapittel_hode.yaml'
-qmd_start_section_filepath: 'C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/QMD/_nifu_qmd_start_section.qmd'
-qmd_end_section_filepath: 'C:/Users/py128/OneDrive - NIFU/Github-R/saros.template/QMD/_nifu_qmd_end_section.qmd'
+index_yaml_file: 'Z_Resources/YAML/index_hode.yaml'
+chapter_yaml_file: 'Z_Resources/YAML/kapittel_hode.yaml'
+qmd_start_section_filepath: 'Z_Resources/QMD/_nifu_start_section.qmd'
+qmd_end_section_filepath: 'Z_Resources/QMD/_nifu_end_section.qmd'
 index_filename: index.qmd
 element_names:
  - uni_cat_prop_plot
@@ -21,7 +21,7 @@ element_names:
  # - bi_catcat_freq_plot2
  # - bi_catcat_table
  # - bi_sigtest
-group_by:
+organize_by:
  - chapter
  - .variable_label_prefix
  - .element_name
@@ -45,7 +45,9 @@ variables_always_at_bottom:
 #- s_508_8
 #- s_509_6
 #- s_606_1
+auxiliary_variables: ~
 panel_tabset_mesos: true
+attach_chapter_dataset: true
 showNA: 'never'
 totals: true
 hide_label_if_prop_below: .01
@@ -55,7 +57,6 @@ hide_chr_for_others: true
 label_font_size: 8.0
 main_font_size: 8.0
 x_axis_label_width: 25.0
-
 plot_height_multiplier: .15
 plot_height_fixed_constant: 1.2
 plot_height_max: 18
@@ -73,7 +74,7 @@ mesos_first: true
 single_y_bivariate_elements: true
 descend: true
 require_common_categories: true
-colour_palette:
+colour_palette_nominal:
 - '#C84957'
 - '#363636'
 - '#EDE2D2'
@@ -84,6 +85,14 @@ colour_palette:
 - '#90D4E0'
 - '#7E2630'
 - '#1B555F'
+colour_palette_ordinal:
+- '#E8B0B7'
+- '#DE919A'
+- '#D5727D'
+- '#C84957'
+- '#BC3848'
+- '#9D2F3C'
+- '#7E2630'
 colour_na: '#A6A6A6'
 colour_2nd_binary_cat: ~ #'#ffffff'
 digits: 0
@@ -141,7 +150,7 @@ translations:
     - intro_by_infix: ' brutt ned på '
     - intro_by_suffix: ''
     - by_breakdown: ' etter '
-    - n_equal_prefix: ' (N = '
+    - n_equal_prefix: ' (N &equals; '
     - n_equal_suffix: ')'
     - table_heading_N: 'Totalt (N)'
     - by_total: 'Alle'
