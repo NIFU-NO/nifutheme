@@ -6,7 +6,8 @@ library(ggplot2)
 library(ggiraph)
 library(knitr)
 font_color <- "#404040"
-
+  extrafont::font_import(prompt = FALSE, pattern = "[Cc]alibri\\.ttf")
+  extrafont::loadfonts(quiet = TRUE)
 ggiraph::set_girafe_defaults(
   opts_hover = ggiraph::opts_hover(css = ggiraph::girafe_css(
         css = glue::glue("fill:{font_color};"), #"stroke:white;fill:#2D8E9F;"

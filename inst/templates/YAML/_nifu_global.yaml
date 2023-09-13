@@ -5,7 +5,8 @@ project:
     browser: true
     host: 127.0.0.1
     navigate: true
-#  post-render: 
+  post-render:
+    - "../R/post_render.R"
 
 execute:
   echo: false
