@@ -22,8 +22,7 @@ theme_nifu <- function(base_size = 16,
                        base_rect_size = base_size / 22){
   
   half_line <- base_size / 2
-  extrafont::font_import(prompt = FALSE, pattern = "[Cc]alibri\\.ttf")
-  extrafont::loadfonts(quiet = TRUE)
+
   
   t <- ggplot2::`%+replace%`(ggplot2::theme_grey(
     base_size = base_size,

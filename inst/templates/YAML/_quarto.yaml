@@ -11,7 +11,7 @@ website:
   navbar:
     logo: "https://www.nifu.no/wp-content/uploads/logo_hvit.png"
     left:
-      - file: "main/om_historikk.qmd"
+      - file: "main/om_prosjektet.qmd"
       - file: "main/om_metode.qmd"
       - sidebar:rapporter
       - file: "main/tidligere_rapporter.qmd"
