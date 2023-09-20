@@ -1,0 +1,13 @@
+---
+title: "kapittel 1 spørringene"
+format: html
+editor: visual
+---
+
+# 1 Innledning
+
+NIFU har gjennomført halvårlige spørreundersøkelser blant skoleledere og skoleeiere på oppdrag fra Utdanningsdirektoratet siden 2009. Denne undersøkelsen er nummer tretti i rekken. Undersøkelsen har fire målgrupper: skoleledere ved grunnskoler og videregående skoler, og kommuner og fylkeskommuner som skoleeiere. Hver spørring er dokumentert gjennom en egen rapport med tittelen «Spørsmål til Skole-Norge». Undersøkelsen våren 2023 ble gjennomført i perioden 14. mars til 27. april. Antall tema som inngår i undersøkelsene varierer fra gang til gang, og noen tema gjentas med jevne mellomrom. I alt inngikk fem temaer i vårens undersøkelse. Et ytterligere tema, bekymringsfullt fravær, er behandlet i en egen rapport. En oversikt over temaene i denne rapporten, og hvilke av gruppene de har gått til, vises i Tabell 1.1. Temaene presenteres i hvert sitt kapittel i rapporten.
+
+**Tabell 1.1 Tema og målgrupper i Utdanningsdirektoratets spørringer våren 2023**
+
+Dette er i stor grad en deskriptiv rapport, med mange tabeller og figurer. Siden vi ikke oppgir desimaler i tabeller og figurer, vil ikke alltid prosentandeler summere seg nøyaktig til 100. Vær oppmerksom på at i enkelte analyser er gruppene små. Vi rapporterer primært på observerte forskjeller som er statistisk signifikante ifølge Pearsons kji-kvadrattest (5-prosentnivå), og vi har valgt å omtale slike forskjeller som «betydelige».
