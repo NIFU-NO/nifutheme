@@ -1,0 +1,239 @@
+---
+title: "Alle undersøkelser"
+editor: visual
+listing:
+  id: report_listings
+  contents: "../4 Completed review/dynamic/**"
+  type: table
+  sort: "date desc"
+---
+
+## Interaktive nettsider
+
+::: {#sample-listings}
+:::
+
+## Tidligere undersøkelser (PDF-format)
+
+```{r setup, include=FALSE, echo=FALSE}
+
+### Må konverteres til Excel-fil, ellers vanskelig vedlikehold
+prior_reports <-
+  tibble::tribble(
+  ~Årgang, ~Rapport, ~Spørreskjema_Grunnskole, ~Spørreskjema_Videregående, ~Spørreskjema_Kommune, ~Spørreskjema_Fylkeskommune, 
+  
+  "2022-høst",
+  "", 
+  "", 
+  "", 
+  "", 
+  "",
+  
+  "2022-vår(lærere)",
+  "https://hdl.handle.net/11250/3001772", 
+  "", 
+  "", 
+  "", 
+  "",
+  
+  "2022-vår",
+  "https://hdl.handle.net/11250/3001772", 
+  "", 
+  "", 
+  "", 
+  "",
+  
+  "2021-høst",
+  "https://hdl.handle.net/11250/2837634", 
+  "", 
+  "", 
+  "", 
+  "",
+  
+  "2021-vår",
+  "https://hdl.handle.net/11250/2763687", 
+  "", 
+  "", 
+  "", 
+  "",
+  
+  "2020-korona",
+  "https://hdl.handle.net/11250/2726052", 
+  "", 
+  "", 
+  "", 
+  "",
+  
+  "2020-høst",
+  "https://hdl.handle.net/11250/2656248", 
+  "https://www.nifu.no/wp-content/uploads/2020/09/Sp%C3%B8rreskjema_GS-1.pdf", 
+  "https://www.nifu.no/wp-content/uploads/2020/09/Sp%C3%B8rreskjema_VGS-1.pdf", 
+  "https://www.nifu.no/wp-content/uploads/2020/09/Sp%C3%B8rreskjema_KOM-1.pdf", 
+  "https://www.nifu.no/wp-content/uploads/2020/09/Sp%C3%B8rreskjema_FYL-1.pdf",
+  
+  "2020-vår",
+  "https://hdl.handle.net/11250/2660412",
+  "http://www.nifu.no/wp-content/uploads/2020/03/Sp_rring_V_r_2020_no_skoleleder-grunnskole.docx",
+  "http://www.nifu.no/wp-content/uploads/2020/03/Sp_rring_V_r_2020_no_skoleleder-videreg%C3%A5ende.docx",
+  "http://www.nifu.no/wp-content/uploads/2020/03/Sp_rring_V_r_2020_no_skoleeier-kommune.docx",
+  "http://www.nifu.no/wp-content/uploads/2020/03/Sp_rring_V_r_2020_no_skoleeier-fylkeskommune.docx",
+  
+  "2019-høst",
+  "http://hdl.handle.net/11250/2639194",
+  "http://www.nifu.no/wp-content/uploads/2019/09/Skoleleder-grunnskole.pdf",
+  "http://www.nifu.no/wp-content/uploads/2019/09/Skoleleder-videreg%C3%A5ende.pdf",
+  "http://www.nifu.no/wp-content/uploads/2019/09/Skoleleeier-kommune.pdf",
+  "http://www.nifu.no/wp-content/uploads/2019/09/Skoleeier-fylkeskommune.pdf",
+  
+  "2019-vår",
+  "http://hdl.handle.net/11250/2608993",
+  "http://www.nifu.no/wp-content/uploads/2019/03/2019_grunnskole.pdf",
+  "http://www.nifu.no/wp-content/uploads/2019/03/2019_videreg%C3%A5ende.pdf",
+  "http://www.nifu.no/wp-content/uploads/2019/03/2019_Kommune.pdf",
+  "http://www.nifu.no/wp-content/uploads/2019/03/2019_Fylkeskommune.pdf",
+  
+  "2018-høst",
+  "http://hdl.handle.net/11250/2584133",
+  "http://www.nifu.no/wp-content/uploads/2019/05/Sp%C3%B8rreskjema-H%C3%B8st-2018.pdf",
+  "",
+  "",
+  "",
+  
+  "2018-vår",
+  "http://hdl.handle.net/11250/2565301",
+  "http://www.nifu.no/wp-content/uploads/2019/05/Sp%C3%B8rreskjema-V%C3%A5r-2018.pdf",
+  "",
+  "",
+  "",
+  
+  "2017-høst",
+  "http://hdl.handle.net/11250/2482853",
+  "http://www.nifu.no/wp-content/uploads/2019/05/Sp%C3%B8rreskjema-H%C3%B8st-2017.pdf",
+  "",
+  "",
+  "",
+  
+  "2017-vår",
+  "http://hdl.handle.net/11250/2447569",
+  "http://www.nifu.no/wp-content/uploads/2019/05/Sp%C3%B8rreskjema-V%C3%A5r-2017.pdf",
+  "",
+  "",
+  "",
+  
+  "2016-høst",
+  "http://hdl.handle.net/11250/2428836",
+  "",
+  "",
+  "",
+  "",
+  
+  "2016-vår",
+  "http://hdl.handle.net/11250/2395366",
+  "",
+  "",
+  "",
+  "",
+  
+  "2015-høst",
+  "http://hdl.handle.net/11250/2375425",
+  "",
+  "",
+  "",
+  "",
+  
+  "2015-vår",
+  "http://hdl.handle.net/11250/279125",
+  "",
+  "",
+  "",
+  "",
+  
+  "2014-høst",
+  "http://hdl.handle.net/11250/275372",
+  "",
+  "",
+  "",
+  "",
+  
+  "2014-vår",
+  "http://hdl.handle.net/11250/280854",
+  "",
+  "",
+  "",
+  "",
+  
+  "2013-høst",
+  "http://hdl.handle.net/11250/280842",
+  "",
+  "",
+  "",
+  "",
+  
+  "2013-vår",
+  "http://hdl.handle.net/11250/280854",
+  "",
+  "",
+  "",
+  "",
+  
+  "2012-høst",
+  "http://hdl.handle.net/11250/280939",
+  "",
+  "",
+  "",
+  "",
+  
+  "2012-vår",
+  "http://hdl.handle.net/11250/280887",
+  "",
+  "",
+  "",
+  "",
+  
+  "2011-høst",
+  "https://nifu.brage.unit.no/nifu-xmlui/handle/11250/280854",
+  "",
+  "",
+  "",
+  "",
+  
+  "2010-høst",
+  "http://hdl.handle.net/11250/279631",
+  "",
+  "",
+  "",
+  "",
+  
+  "2010-vår",
+  "http://hdl.handle.net/11250/279125",
+  "",
+  "",
+  "",
+  "",
+  
+  "2009-høst",
+  "http://hdl.handle.net/11250/279991",
+  "",
+  "",
+  "",
+  "",
+  
+  "2009-vår",
+  "http://hdl.handle.net/11250/279916",
+  "",
+  "",
+  "",
+  "",
+) |> 
+  dplyr::mutate(dplyr::across(.cols = -`Årgang`, ~ifelse(nchar(.x)>0, paste0("[Her](", .x, ")"), ""))) |> 
+  dplyr::rename_with(.fn = ~stringr::str_replace(.x, "_", " "))
+```
+
+```{r, results='asis'}
+prior_reports |> 
+  knitr::kable()
+```
+
+## Temaer i de ulike undersøkelsene
+
+Under utarbeiding. I mellomtiden, se [Utdanningsdirektoratets sider](https://www.udir.no/tall-og-forskning/publikasjoner/funn-fra-sporsmal-til-skole-norge/#a160797).

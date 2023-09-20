@@ -1,12 +1,12 @@
 project:
-  type: website # Bytt til book om man vil prøve ut bokformat (eksperimentelt)
+  type: website # Bytt til `book` om man vil prøve ut bokformat (eksperimentelt)
   preview:
     # port: 3000
     browser: true
     host: 127.0.0.1
     navigate: true
   post-render:
-    - "../R/post_render.R"
+    - "../52_ressurser/post_render.R"
 
 execute:
   echo: false
@@ -54,7 +54,7 @@ license: "CC BY 4.0"
 quarto-required: ">= 1.4.156"
 
 ### Bibliografi, samt hvordan sitere rapportene
-csl: "../Z_Resources/CitationStyles/nifu.csl"
+csl: "../52_ressurser/CitationStyles/nifu.csl"
 google-scholar: true
 reference-location: margin
 citation-location: margin
@@ -68,8 +68,8 @@ format:
     linestretch: 1.6
     theme:
      - yeti
-     - "../Z_Resources/CSS/nifu.scss"
-    css: "../Z_Resources/CSS/nifu.css"
+     - "../52_ressurser/CSS/nifu.scss"
+    css: "../52_ressurser/CSS/nifu.css"
     toc: true
     comments:
       hypothesis: true
@@ -81,17 +81,17 @@ format:
           });
         </script>
   docx:
-    reference-doc: "../Z_Resources/DOCX/nifu.docx"
+    reference-doc: "../52_ressurser/DOCX/nifu.docx"
     number-sections: false
   pdf:
     latex-auto-install: true
     latex-auto-mk: true
-    documentclass: "../Z_Resources/LaTeX/nifu"
+    documentclass: "../52_ressurser/LaTeX/nifu"
     classoption: [norsk, report]
     pdf-engine: pdflatex
     include-in-header:
-      - file: "../Z_Resources/LaTeX/NIFU_preamble.tex"
-    output-file: "PDF/Rapport.pdf"
+      - file: "../52_ressurser/LaTeX/NIFU_preamble.tex"
+    output-file: "Rapport.pdf"
     colorlinks: true
     shift-heading-level-by: -1
     top-level-division: chapter

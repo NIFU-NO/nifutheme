@@ -1,25 +1,22 @@
 project:
   type: website
   output-dir: "_site"
-  render:
-    - "main"
-    - "rapporter"
-    # - "tidsserier"
 
 website:
   title: "Spørsmål til Skole-Norge"
+  description: "Analyser og resultater fra Utdanningsdirektoratets spørreundersøkelse i forbindelse med evalueringen av fagfornyelsen"
   navbar:
     logo: "https://www.nifu.no/wp-content/uploads/logo_hvit.png"
     left:
-      - file: "main/om_prosjektet.qmd"
-      - file: "main/om_metode.qmd"
-      - sidebar:rapporter
-      - file: "main/tidligere_rapporter.qmd"
+      - file: "Main/om_prosjektet.qmd"
+      - file: "Main/om_metode.qmd"
+      - sidebar:Rapporter
+      - file: "Main/tidligere_rapporter.qmd"
       # - sidebar:tidsserier
   sidebar:
-    - id: rapporter
+    - id: Rapporter
       title: "Rapporter"
-      contents: "rapporter"
+      contents: "Rapporter"
     # - id: tidsserier
     #   title: "Tidsserier"
     #   contents: "tidsserier"

@@ -1,0 +1,29 @@
+---
+title: "Om prosjektet"
+---
+
+[![](http://www.nifu.no/wp-content/uploads/2019/03/sporringer_nifu1.jpg){alt=""}](http://www.nifu.no/wp-content/uploads/2019/03/sporringer_nifu1.jpg)
+
+**Nordisk institutt for studier av innovasjon, forskning og utdanning (NIFU) har gjennomført halvårlige spørreundersøkelser blant skoler og skoleeiere på oppdrag fra Utdanningsdirektoratet siden 2009. Undersøkelsene er kjent som Utdanningsdirektoratets spørringer.**
+
+NIFU fortsetter dette arbeidet med en rammeavtale for 2021-2025 med Utdanningsdirektoratet.
+
+Temaene for de enkelte undersøkelsene avtales fra gang til gang og skal dekke Utdanningsdirektoratets kunnskapsbehov til enhver tid. Resultatene fra undersøkelsene offentliggjøres i NIFUs ordinære rapportserie og foreligger nedlastbare i PDF-format på Utdanningsdirektoratets og NIFUs hjemmesider \[disse sidene\].
+
+Nåværende prosjektleder for Utdanningsdirektoratets spørringer til Skole-Norge er [Ann Cecilie Bergene](https://www.nifu.no/employees/ann-cecilie-bergene/) ved NIFU. Se også [Tidligere prosjektledere og prosjektmedarbeidere].
+
+## Bakgrunn
+
+Utdanningsdirektoratet har siden 2009 hatt et system for koordinering av spørreundersøkelser om ulike forhold i utdanningssektoren. Et tilsvarende system ble innført for barnehagesektoren i 2014. Formålet med disse koordinerte spørringene er å begrense egne undersøkelser utad og dermed redusere belastningen på skole og barnehage. Undersøkelsene blir gjennomført to ganger i året for utdanningssektoren og en gang i året for barnehagesektoren.
+
+Spørreundersøkelsene til utdanningssektoren skal primært dekke to formål. Det første formålet er å gjøre en samordning av små og ad-hoc pregede undersøkelser. Videre skal spørringene være en systematisering av undersøkelser knyttet til direktoratets behov for oppfølging av viktige satsingsområder. For utdanningssektoren er målgruppene for undersøkelsene i hovedsak begrenset til skoleeiere (kommune/fylkeskommune) og skoleledere (grunnskole/videregående), men i enkelte tilfeller gjennomføres også undersøkelser blant lærere og opplæringskontor.
+
+NIFU samarbeider med Trøndelag forskning og Utvikling som gjennomfører spørringene til barnehagesektoren. For barnehagesektoren er målgruppene for undersøkelsen barnehagestyrere, kommunale og private barnehageeiere og lokal barnehagemyndighet.
+
+Resultatene fra undersøkelsene i utdanningssektoren offentliggjøres i NIFUs ordinære rapportserie og foreligger nedlastbare i PDF-format på både Utdanningsdirektoratets (lenke til www.udir.no) og NIFUs hjemmesider.
+
+## Tidligere prosjektledere og prosjektmedarbeidere
+
+```{r}
+
+```

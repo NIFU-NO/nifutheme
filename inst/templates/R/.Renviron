@@ -1,0 +1,4 @@
+LC_ALL="nb.utf8"
+RENV_PATHS_CACHE=%USERPROFILE%/NIFU/Metode - General/SAROS-core/shared resources/renv cache/
+QUALTRICS_BASE_URL="nifu.qualtrics.com"
+QUALTRICS_API_KEY="1"

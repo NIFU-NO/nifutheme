@@ -1,0 +1,90 @@
+Administrasjon:
+  Søknad:
+    Utlysning: []
+    Formaliteter: []
+    CV-er: []
+    Samarbeidsavtaler: []
+    Søknad: []
+    Foranalyse: []
+    For innsending: []
+  Budsjett: []
+  Kontrakter og avtaler: []
+  Fakturaer, regnskap og kvitteringer: []
+  Statusrapporter: []
+  Logo og grafisk materiale: []
+  Interne møter:
+    Møteagendaer og invitasjoner: []
+    Interne presentasjoner: []
+    Referater: []
+Materialer:
+  Overordnet planlegging: []
+  Samtykkeskjema: []
+  Etisk-GDPR-godkjenning: []
+  Spørreundersøkelser: []
+  Intervjuguider:
+    Ansatte: []
+    Elever: []
+    Foreldre: []
+    Forskere: []
+    Ledere: []
+    Lærere: []
+    Rektorer: []
+    Studenter: []
+    Befolkning: []
+  Forespørsel om data fra: []
+  Litteraturgjennomgang-design: []
+  Intervensjonsmaterialer: []
+  Randomisering av deltakere: []
+  Kapitteloversikter: []
+Litteratur:
+  Emnet har politisk relevans: []
+  Ren teori og rammeverk: []
+  Lignende empiriske studier: []
+  Lignende materialer for datainnsamling: []
+  Relevant analytisk metodikk: []
+  Ubehandlet (fjern herfra): []
+Data:
+  Befolkningsdata:
+    Kodebok: []
+  Utvalgsramme: []
+  Registerdata: []
+  Undersøkelsesdata:
+    Nedlastede responsdata:
+      Kodebok: []
+    Opplastede responslister: []
+  Kvalitative data:
+    Intervjuopptak: []
+    Observasjonsnotater: []
+  Tekstkorpus: []
+  PDF-rapporter: []
+  Forberedte data:
+    Kodebøker: []
+Saros_{{prosjekt_initialer}}:
+  Skript: []
+  Ressurser: []
+  Utkastgenereringer:
+    main: []
+    Rapporter: []
+  Utkast i redigering:
+    main: []
+    Rapporter: []
+  Fullførte utkast:
+    main: []
+    Rapporter: []
+Publikasjoner:
+  Paper1-Short title (author initials):
+    Cover letter & response to reviewers: []
+    Manuscript: []
+    Analysis: []
+    Figures for submission: []
+    Tables for submission: []
+    Appendix: []
+    Online supplementary materials: []
+Formidling:
+  Forskningskonferanse-presentasjon: []
+  Forskningskonferanse-poster: []
+  Interessenter og referansegruppe: []
+  Interessenters kommunikasjonskanaler: []
+  Praktikere og spesialinteressekanaler: []
+  Offentlighet gjennom massemediekanaler: []
+Annet: []
