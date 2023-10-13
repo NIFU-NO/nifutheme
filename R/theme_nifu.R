@@ -59,10 +59,13 @@ theme_nifu <- function(base_size = 16,
       
       legend.position = "bottom",
       
+      if (is_font_installed("Calibri")){
+        text = ggplot2::element_text(family = "Calibri")
+        complete = TRUE
+      } else {
+        complete = TRUE
+      }
       
-      text = ggplot2::element_text(family = "Calibri"),
-      
-      complete = TRUE
     )
   )
   
