@@ -23,6 +23,9 @@ theme_nifu <- function(base_size = 16,
   
   half_line <- base_size / 2
 
+  if (is_font_installed("Calibri")){
+    base_family <- "Calibri"
+  } 
   
   t <- ggplot2::`%+replace%`(ggplot2::theme_grey(
     base_size = base_size,
@@ -33,6 +36,7 @@ theme_nifu <- function(base_size = 16,
     ggplot2::theme(
       line = ggplot2::element_line(),
       rect = ggplot2::element_rect(),
+      text = ggplot2::element_text(family = base_family),
       axis.ticks      = ggplot2::element_blank(),
       axis.text = ggplot2::element_text(size = ggplot2::rel(1.4)),
       axis.title.x = ggplot2::element_text(size = ggplot2::rel(1.8),
@@ -60,10 +64,7 @@ theme_nifu <- function(base_size = 16,
       
       legend.position = "bottom",
       
-      
-      if (is_font_installed("Calibri")){
-        text = ggplot2::element_text(family = "Calibri")
-      } 
+      complete = TRUE
       
     )
   )
@@ -72,7 +73,7 @@ theme_nifu <- function(base_size = 16,
   
 }
 
-#' Title
+#' Adds color and fill for a complete
 #'
 #' @inheritParams theme_nifu
 #' @inheritParams scale_colour_nifu

@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_nifu.R
 \name{nifu_theme}
 \alias{nifu_theme}
-\title{Title}
+\title{Adds color and fill for a complete}
 \usage{
 nifu_theme(
   base_size = 16,
@@ -27,7 +27,7 @@ nifu_theme(
 List
 }
 \description{
-Title
+Adds color and fill for a complete
 }
 \examples{
 library(ggplot2)
